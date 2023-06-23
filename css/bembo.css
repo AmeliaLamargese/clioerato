@@ -38,6 +38,7 @@ img {
 body {
   background-image: url(backgroundimg/letterbg.jpg); /*grey paper bg*/
   font-family: "Bembo", "serif"; /*because bembo is a classic font*/
+  cursor: url(cursor/pointerbembo.png), auto;
 }
 
 a {
@@ -67,34 +68,37 @@ p {
 }
 /*header css*/
 
-
-
 nav {
   background: rgb(213, 0, 0);
-  height: 120px;
+  height: 80px;
   width: 100%;
   border-bottom:  2px solid black;
-  padding-bottom: 10px;
   border-top:  2px solid black;
-  padding-top: 10px;
-
-  
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  line-height: 80px;
 }
-
-
 
 label.logo{
   color: rgb(0, 0, 0);
   font-size: 35px;
   line-height: 80px;
-  padding: 0 100px;
   font-weight: bold;
+}
+
+.logoimg{
+  margin-left: 5%;
+  padding-top: 7px;
 }
 
 nav ul {
   float: right;
   font-size: 15px;
-  margin-right: 20px;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+
 }
 
 nav ul li{
@@ -110,30 +114,22 @@ nav ul li a{
   font-size: 20px;
   padding: 7px 13px;
   border-radius: 2px;
-
 }
 
-a.active,a:hover{
+a.active, a:hover{
   background:rgb(213, 0, 0);
   transition: .5s;
-
 }
-
-
 
 #hero {
   width: 100%;
   height: 70vh;
   background-color: rgba(59, 59, 59, 0.8);
-  overflow: hidden;
-  padding: 0;
-  margin-bottom: -110px;
-  position: relative;
-  z-index: 1;
-  border-bottom:  2px solid black;
   
-
+  margin-bottom: -110px;
+  border-bottom:  2px solid black;
 }
+
 #hero .carousel-item {
   width: 100%;
   height: 70vh;
@@ -358,7 +354,7 @@ a.active,a:hover{
 .services .icon-box {
   margin-top: 10px;
   border: 1px solid floralwhite;
-  padding: 80px 20px;
+  padding: 60px 15px;
   transition: all ease-in-out 0.3s;
   border-width: 5px;
   border-color:rgb(0, 0, 0);
@@ -375,13 +371,13 @@ a.active,a:hover{
 .services .icon {
   width: 200px;
   height: 200px;
-  margin-left: 40px;
-  align-items: center;
-
+  margin:auto;
 }
 
 .services .row {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .icon-box {
@@ -399,12 +395,14 @@ a.active,a:hover{
   padding: 20px;
   border-bottom:  3px solid black;/* Add a border to the bottom of the header */
   border-top:  3px solid black;
+  margin: auto;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 30px;
 }
 
 .footer-section {
