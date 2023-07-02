@@ -133,9 +133,9 @@ a.active, a:hover{
   display: none;
   position: absolute;
   background-color: rgb(213, 0, 0);
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border: 2px solid black;
+  width: 200%;
 }
 
 .dropdown-content a {
@@ -143,6 +143,8 @@ a.active, a:hover{
   text-decoration: none;
   display: block;
   font-size: 15px;
+  margin-left: 5px;
+
 }
 
 .dropdown:hover .dropdown-content {display: block;}
