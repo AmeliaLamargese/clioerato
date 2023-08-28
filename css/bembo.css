@@ -430,9 +430,7 @@ a.active, a:hover{
   text-align: center;
 }
 .theteam  p {
-  text-align: justify;
-  margin-left: 50px;
-  margin-right: 50px;
+  text-align: center;
 }
 
 .theteam .icon-box {
@@ -461,8 +459,8 @@ a.active, a:hover{
 
 .theteam .row {
   display: flex;
-  margin-left: 200px;
-  margin-right: 200px; 
+  flex-direction: row;
+  justify-content: center;
 }
 
 .theteam .icon-box {
@@ -537,3 +535,14 @@ a.active, a:hover{
   margin-bottom: 30px;
 }
 
+#metadatatable{
+  width: 30%;
+  float: left;
+  height: 700px;
+}
+
+#chosenpoem{
+  width: 70%;
+  float: right;
+  height: 700px;
+}
