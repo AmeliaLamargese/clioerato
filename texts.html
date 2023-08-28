@@ -17,16 +17,36 @@
 
 <body>
   <header id="header">
-  <nav>
-    <label class="logo">Clio & Erato</label>
-    <ul>
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="issues.html">Issues</a></li>
-      <li><a href="documentation.html">Documentation</a></li>
-      <li><a href="project.html">Project</a></li>
-      <li><a href="">Styles</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <img src="img/logo.png" width="50" class="logoimg">
+      <label class="logo">Clio & Erato</label>
+      <ul>
+        <li><a  href="index.html">Home</a></li>
+        <li>
+          <div class="dropdown">
+            <a href="issues.html">Issues <img src="img/menu.png" width="10"></a>
+            <div class="dropdown-content">
+              <a href="issues.html#ancient">Ancient poetry</a>
+              <a href="issues.html#nineteenth">Romantic poetry</a>
+              <a href="issues.html#nowadays">Contemporary poetry</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li>
+          <div class="dropdown">
+            <span id="themes">Themes <img src="img/menu.png" width="10"></span>
+            <div class="dropdown-content">
+              <a>Bembo</a>
+              <a>Deco</a>
+              <a>60sad</a>
+              <a>Social2030</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
   </header>
 
 
@@ -98,26 +118,21 @@
         <div class="footer-content">
           <div class="footer-section">
             <h3>About Us</h3>
-            <p>A project created by DHDK students for the Information Modelling and Web Technologies course, a.y. 2021/2022<br>
-              Alma Mater Studiorum - University of Bologna</p>
+            <p>A project created by DHDK students for the <a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/454464">Information Modelling and Web Technologies course</a>, a.y. 2021/2022<br>
+              <a href="https://www.unibo.it/en">Alma Mater Studiorum - University of Bologna</a></p>
           </div>
           <div class="footer-section">
             <h3>Contacts</h3>
-            <p>Anita Liviabella: anitaliviabella98@gmail.com</p>
-            <p>Amelia Simonetta Lamargese: alamargese@gmail.com</p><br>
-            <p>© Copyright 2022 Clio&Erato. All Rights Reserved<br>
-              Powered by Bootstrap</p>
+            <p>Anita Liviabella: <a href="mailto:anitaliviabella98@gmail.com">anitaliviabella98@gmail.com</a></p>
+            <p>Amelia Simonetta Lamargese: <a href="mailto:alamargese@gmail.com">alamargese@gmail.com</a></p><br>
+            
           </div>
           <div class="footer-section">
-            <h3>Github repository</h3>
-            <ul class="social-media-icons">
-              <li><a href="#"><i class="fa fa-github" style="font-size:36px"></i>
-   
-            </ul>
+            <p>© Copyright 2023 Clio&Erato.<br>All Rights Reserved<br>Powered by Bootstrap</p>
           </div>
         </div>
         <div class="footer-bottom">
-            <a href="#top" class="back-to-top">Return to Top</a>
+          <a href="#top" class="back-to-top">Return to Top</a>
         </div>
       </footer>
 
