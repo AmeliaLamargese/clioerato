@@ -479,16 +479,106 @@ a.active, a:hover{
 #menuindex {
   text-align: center;
   margin-top: 20px;
-  margin-left: 0px;
-  margin-right: 0px;
   background-color: #ffffff;
   border-bottom:  2px solid black;
   border-top:  2px solid black;
   border-left:  2px solid black;
   border-right:  2px solid black;
   height: 600px;
+  padding-top: 20px;
 }
 
+.services #authorbtn{
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+  padding: 5px;
+  font-size: 90%;
+  margin-top: 10px;
+  font-family: "Bembo", "serif";
+  text-shadow: 2px 2px 5px rgb(255, 251, 0);
+}
+.services #authorbtn:hover{
+  text-shadow: 2px 2px 10px rgb(213, 0, 0);
+}
+
+.services #hidden{
+  visibility: hidden;
+  font-size: 40%;
+}
+
+#langButton{
+  cursor: pointer;
+  font-size: 90%;
+  border: solid 1px black;
+  padding: 10px;
+  border-radius: 7%;
+  font-family: "Bembo", "serif";
+  background-color: white;
+  margin-left: 40px;
+  text-shadow: 2px 2px 5px rgb(255, 251, 0);;
+}
+
+#langButton:hover{
+  text-shadow: 2px 2px 10px rgb(213, 0, 0);
+}
+
+.services #clickable{
+  background-color: inherit;
+  border: none;
+  font-family: "Bembo", "serif";
+  text-shadow: 2px 2px 5px rgb(255, 251, 0);
+  cursor: pointer;
+}
+
+.services #clickable:hover{
+  text-shadow: 2px 2px 10px rgb(213, 0, 0);
+}
+
+.services #metadata{
+  cursor: pointer;
+  font-size: 90%;
+  border: solid 1px black;
+  padding: 10px;
+  border-radius: 7%;
+  font-family: "Bembo", "serif";
+  margin: 3px;
+}
+
+#sappho{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+#dickinson{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+#kaur{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+#menuindex .self{
+  background-color: gold;
+}
+#menuindex .body{
+  background-color: #ff77d2;
+}
+#menuindex .place{
+  background-color:  #77bdff;
+}
+#menuindex .neg{
+  background-color: #ff5757;
+}
+#menuindex .pos{
+  background-color: #65ff57;
+}
 
 #menuindex h3 {
   margin-top: 10px;
@@ -535,14 +625,13 @@ a.active, a:hover{
   margin-bottom: 30px;
 }
 
-#metadatatable{
-  width: 30%;
-  float: left;
-  height: 700px;
-}
-
 #chosenpoem{
   width: 70%;
   float: right;
   height: 700px;
+  overflow: auto;
+}
+
+#clear{
+  clear: both;
 }

@@ -185,12 +185,10 @@ var posflag=false;
 function showHome() {
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showHomeIt()">Show Italian</button>
-  </div>
-  <br><br>
-  <h3>Untitled (from <i>home body</i>)</h3>
+  <button type="button" onclick="showHomeIt()" id="langButton">Show Italian</button>
+  <h3>Untitled (from <i>home body</i>)</h3><br><br>
   <p>
     <span class="self">our</span> souls<br>
     will not be <span class="pos">soothed</span><br>
@@ -227,13 +225,11 @@ function showHome() {
 function showHomeIt(){
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showHome()">Hide Italian</button>
-  </div>
-  <br><br>
+  <button type="button" onclick="showHome()" id="langButton">Hide Italian</button>
   <div id="Eng">
-    <h3>Untitled (from <i>home body</i>)</h3>
+    <h3>Untitled (from <i>home body</i>)</h3><br><br>
     <p>
       <span class="self">our</span> souls<br>
       will not be <span class="pos">soothed</span><br>
@@ -288,12 +284,10 @@ function showHomeIt(){
 function showHate() {
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showHateIt()">Show Italian</button>
-  </div>
-  <br><br>
-  <h3>self-hate</h3>
+  <button type="button" onclick="showHateIt()" id="langButton">Show Italian</button>
+  <h3>self-hate</h3><br><br>
   <p>
     <span class="place">somewhere</span> along the <span class="place">way</span><br>
     <span class="self">i</span> <span class="neg">lost</span> the <span class="self">self</span>-<span class="pos">love</span><br>
@@ -335,13 +329,11 @@ function showHate() {
 function showHateIt(){
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showHate()">Hide Italian</button>
-  </div>
-  <br><br>
+  <button type="button" onclick="showHate()" id="langButton">Hide Italian</button>
   <div id="Eng">
-    <h3>self-hate</h3>
+    <h3>self-hate</h3><br><br>
     <p>
       <span class="place">somewhere</span> along the <span class="place">way</span><br>
       <span class="self">i</span> <span class="neg">lost</span> the <span class="self">self</span>-<span class="pos">love</span><br>
@@ -407,12 +399,10 @@ function showHateIt(){
 function showMilk() {
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showMilkIt()">Show Italian</button>
-  </div>
-  <br><br>
-  <h3>Untitled (from <i>milk and honey</i>)</h3>
+  <button type="button" onclick="showMilkIt()" id="langButton">Show Italian</button>
+  <h3>Untitled (from <i>milk and honey</i>)</h3><br><br>
   <p>
     did you think <span class="self">i</span> was a <span class="place">city</span><br>
     big enough for a weekend getaway<br>
@@ -457,13 +447,11 @@ function showMilk() {
 function showMilkIt(){
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showMilk()">Hide Italian</button>
-  </div>
-  <br><br>
+  <button type="button" onclick="showMilk()" id="langButton">Hide Italian</button>
   <div id="Eng">
-    <h3>Untitled (from <i>milk and honey</i>)</h3>
+    <h3>Untitled (from <i>milk and honey</i>)</h3><br><br>
     <p>
       did you think <span class="self">i</span> was a <span class="place">city</span><br>
       big enough for a weekend getaway<br>
@@ -537,12 +525,10 @@ function showMilkIt(){
 function showOde() {
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showOdeGre()">Show Greek</button>
-  </div>
-  <br><br>
-  <h3>Ode to Aphrodite</h3>
+  <button type="button" onclick="showOdeGre()" id="langButton">Show Greek</button>
+  <h3>Ode to Aphrodite</h3><br><br>
   <p>
     On the throne of many hues, <span class="pos">Immortal</span> Aphrodite,<br>
     child of Zeus, weaving wiles: <span class="self">I</span> beg you,<br>
@@ -594,13 +580,11 @@ function showOde() {
 function showOdeGre(){
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showOde()">Hide Greek</button>
-  </div>
-  <br><br>
+  <button type="button" onclick="showOde()" id="langButton">Hide Greek</button>
   <div id="Eng">
-    <h3>Ode to Aphrodite</h3>
+    <h3>Ode to Aphrodite</h3><br><br>
     <p>
       On the throne of many hues, <span class="pos">Immortal</span> Aphrodite,<br>
       child of Zeus, weaving wiles: <span class="self">I</span> beg you,<br>
@@ -686,12 +670,10 @@ function showOdeGre(){
 function showSappho() {
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showSapphoGre()">Show Greek</button>
-  </div>
-  <br><br>
-  <h3>Sappho 31</h3>
+  <button type="button" onclick="showSapphoGre()" id="langButton">Show Greek</button>
+  <h3>Sappho 31</h3><br><br>
   <p>
     That man seems to <span class="self">me</span> to be equal to the <span class="pos">gods</span><br>
     who is sitting opposite you<br>
@@ -734,13 +716,11 @@ function showSappho() {
 function showSapphoGre(){
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showSappho()">Hide Greek</button>
-  </div>
-  <br><br>
+  <button type="button" onclick="showSappho()" id="langButton">Hide Greek</button>
   <div id="Eng">
-    <h3>Sappho 31</h3>
+    <h3>Sappho 31</h3><br><br>
     <p>
       That man seems to <span class="self">me</span> to be equal to the <span class="pos">gods</span><br>
       who is sitting opposite you<br>
@@ -807,12 +787,10 @@ function showSapphoGre(){
 function showMidnight() {
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showMidGre()">Show Greek</button>
-  </div>
-  <br><br>
-  <h3>Midnight poem</h3>
+  <button type="button" onclick="showMidGre()" id="langButton">Show Greek</button>
+  <h3>Midnight poem</h3><br><br>
   <p>
     The moon and the Pleiades have set,<br>
     it is midnight,<br>
@@ -841,13 +819,11 @@ function showMidnight() {
 function showMidGre(){
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showMidnight()">Hide Greek</button>
-  </div>
-  <br><br>
+  <button type="button" onclick="showMidnight()" id="langButton">Hide Greek</button>
   <div id="Eng">
-    <h3>Midnight poem</h3>
+    <h3>Midnight poem</h3><br><br>
     <p>
       The moon and the Pleiades have set,<br>
       it is midnight,<br>
@@ -886,12 +862,10 @@ function showMidGre(){
 function showSlant() {
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showSlantIt()">Show Italian</button>
-  </div>
-  <br><br>
-  <h3>There’s a Certain Slant of Light</h3>
+  <button type="button" onclick="showSlantIt()" id="langButton">Show Italian</button>
+  <h3>There’s a Certain Slant of Light</h3><br><br>
   <p>
     There's a certain Slant of <span class="pos">light</span>,<br>
     Winter Afternoons -<br>
@@ -932,13 +906,11 @@ function showSlant() {
 function showSlantIt(){
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showSlant()">Hide Italian</button>
-  </div>
-  <br><br>
+  <button type="button" onclick="showSlant()" id="langButton">Hide Italian</button>
   <div id="Eng">
-    <h3>There’s a Certain Slant of Light</h3>
+    <h3>There’s a Certain Slant of Light</h3><br><br>
     <p>
       There's a certain Slant of <span class="pos">light</span>,<br>
       Winter Afternoons -<br>
@@ -1002,12 +974,10 @@ function showSlantIt(){
 function showGrass() {
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showGrassIt()">Show Italian</button>
-  </div>
-  <br><br>
-  <h3>The Grass so little has to do</h3>
+  <button type="button" onclick="showGrassIt()" id="langButton">Show Italian</button>
+  <h3>The Grass so little has to do</h3><br><br>
   <p>
     The Grass so little has to do -<br>
     A Sphere of simple Green -<br>
@@ -1052,13 +1022,11 @@ function showGrass() {
 function showGrassIt(){
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showGrass()">Hide Italian</button>
-  </div>
-  <br><br>
+  <button type="button" onclick="showGrass()" id="langButton">Hide Italian</button>
   <div id="Eng">
-    <h3>The Grass so little has to do</h3>
+    <h3>The Grass so little has to do</h3><br><br>
     <p>
       The Grass so little has to do -<br>
       A Sphere of simple Green -<br>
@@ -1129,12 +1097,10 @@ function showGrassIt(){
 function showFall() {
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showFallIt()">Show Italian</button>
-  </div>
-  <br><br>
-  <h3>If you were coming in the Fall</h3>
+  <button type="button" onclick="showFallIt()" id="langButton">Show Italian</button>
+  <h3>If you were coming in the Fall</h3><br><br>
   <p>
     If you were coming in the Fall,<br>
     <span class="self">I</span>'d brush the Summer by<br>
@@ -1179,13 +1145,11 @@ function showFall() {
 function showFallIt(){
   var chosenpoem = document.getElementById("chosenpoem");
   chosenpoem.innerHTML=`
+  <h2 class="section-title">Choose a poem from the metadata table</h2>
   <br>
-  <div class="btn-group">
-    <button onclick="showFall()">Hide Italian</button>
-  </div>
-  <br><br>
+  <button type="button" onclick="showFall()" id="langButton">Hide Italian</button>
   <div id="Eng">
-    <h3>If you were coming in the Fall</h3>
+    <h3>If you were coming in the Fall</h3><br><br>
     <p>
       If you were coming in the Fall,<br>
       <span class="self">I</span>'d brush the Summer by<br>
