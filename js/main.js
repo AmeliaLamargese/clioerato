@@ -229,7 +229,7 @@ function showHomeIt(){
   <br>
   <button type="button" onclick="showHome()" id="langButton">Hide Italian</button>
   <div id="Eng">
-    <h3>Untitled (from <i>home body</i>)</h3><br><br>
+    <br><h3>Untitled (from <i>home body</i>)</h3><br><br>
     <p>
       <span class="self">our</span> souls<br>
       will not be <span class="pos">soothed</span><br>
@@ -246,7 +246,7 @@ function showHomeIt(){
     </p>
   </div>
   <div id="secondLanguage">
-    <h3>Senza titolo (da <i>home body</i>)</h3>
+    <h3>Senza titolo (da <i>home body</i>)</h3><br><br>
     <p>
       le nostre anime<br>
       non troveranno sollievo<br>
@@ -333,7 +333,7 @@ function showHateIt(){
   <br>
   <button type="button" onclick="showHate()" id="langButton">Hide Italian</button>
   <div id="Eng">
-    <h3>self-hate</h3><br><br>
+    <br><h3>self-hate</h3><br><br>
     <p>
       <span class="place">somewhere</span> along the <span class="place">way</span><br>
       <span class="self">i</span> <span class="neg">lost</span> the <span class="self">self</span>-<span class="pos">love</span><br>
@@ -355,7 +355,7 @@ function showHateIt(){
     </p>
   </div>
   <div id="secondLanguage">
-    <h3>autoodio</h3>
+    <h3>autoodio</h3><br><br>
     <p>
       in un punto imprecisato del cammino<br>
       ho perso l’autoamore<br>
@@ -451,7 +451,7 @@ function showMilkIt(){
   <br>
   <button type="button" onclick="showMilk()" id="langButton">Hide Italian</button>
   <div id="Eng">
-    <h3>Untitled (from <i>milk and honey</i>)</h3><br><br>
+    <br><h3>Untitled (from <i>milk and honey</i>)</h3><br><br>
     <p>
       did you think <span class="self">i</span> was a <span class="place">city</span><br>
       big enough for a weekend getaway<br>
@@ -476,7 +476,7 @@ function showMilkIt(){
     </p>
   </div>
   <div id="secondLanguage">
-    <h3>Senza titolo (da <i>milk and honey</i>)</h3>
+    <h3>Senza titolo (da <i>milk and honey</i>)</h3><br><br>
     <p>
       mi avevi forse presa per una città<br>
       abbastanza grade per una gita di un weekend<br>
@@ -584,7 +584,7 @@ function showOdeGre(){
   <br>
   <button type="button" onclick="showOde()" id="langButton">Hide Greek</button>
   <div id="Eng">
-    <h3>Ode to Aphrodite</h3><br><br>
+    <br><h3>Ode to Aphrodite</h3><br><br>
     <p>
       On the throne of many hues, <span class="pos">Immortal</span> Aphrodite,<br>
       child of Zeus, weaving wiles: <span class="self">I</span> beg you,<br>
@@ -616,7 +616,7 @@ function showOdeGre(){
     </p>
   </div>
   <div id="secondLanguage">
-    <h3>Insert greek title</h3>
+    <h3>Insert greek title</h3><br><br>
     <p>
       «ποικιλόθρον' ἀθανάτ' Αφρόδιτα,<br>
       παῖ Δίος δολόπλοκε, λίσσομαί σε,<br>
@@ -720,7 +720,7 @@ function showSapphoGre(){
   <br>
   <button type="button" onclick="showSappho()" id="langButton">Hide Greek</button>
   <div id="Eng">
-    <h3>Sappho 31</h3><br><br>
+    <br><h3>Sappho 31</h3><br><br>
     <p>
       That man seems to <span class="self">me</span> to be equal to the <span class="pos">gods</span><br>
       who is sitting opposite you<br>
@@ -743,7 +743,7 @@ function showSapphoGre(){
     </p>
   </div>
   <div id="secondLanguage">
-    <h3>Insert greek title</h3>
+    <h3>Insert greek title</h3><br><br>
     <p>
       φαίνεταί μοι κῆνος ἴσος θέοισιν<br>
       ἔμμεν᾽ ὤνηρ, ὄττις ἐνάντιός τοι<br>
@@ -832,7 +832,7 @@ function showMidGre(){
     </p>
   </div>
   <div id="secondLanguage">
-    <h3>Insert greek title</h3>
+    <br><h3>Insert greek title</h3><br><br>
     <p>
       Δέδυκε μὲν ἀ σελάννα<br>
       καὶ Πληΐαδες, μέσαι δέ<br>
@@ -910,7 +910,7 @@ function showSlantIt(){
   <br>
   <button type="button" onclick="showSlant()" id="langButton">Hide Italian</button>
   <div id="Eng">
-    <h3>There’s a Certain Slant of Light</h3><br><br>
+    <br><h3>There’s a Certain Slant of Light</h3><br><br>
     <p>
       There's a certain Slant of <span class="pos">light</span>,<br>
       Winter Afternoons -<br>
@@ -931,7 +931,7 @@ function showSlantIt(){
     </p>
   </div>
   <div id="secondLanguage">
-    <h3>V'è un angolo di luce</h3>
+    <h3>V'è un angolo di luce</h3><br><br>
     <p>
       V'è un angolo di luce,<br>
       nei meriggi invernali<br>
@@ -1026,7 +1026,7 @@ function showGrassIt(){
   <br>
   <button type="button" onclick="showGrass()" id="langButton">Hide Italian</button>
   <div id="Eng">
-    <h3>The Grass so little has to do</h3><br><br>
+    <br><h3>The Grass so little has to do</h3><br><br>
     <p>
       The Grass so little has to do -<br>
       A Sphere of simple Green -<br>
@@ -1051,7 +1051,7 @@ function showGrassIt(){
     </p>
   </div>
   <div id="secondLanguage">
-    <h3>L'Erba ha poco da fare</h3>
+    <h3>L'Erba ha poco da fare</h3><br><br>
     <p>
       L'Erba ha poco da fare -<br>
       sfera d’umile verde<br>
@@ -1149,7 +1149,7 @@ function showFallIt(){
   <br>
   <button type="button" onclick="showFall()" id="langButton">Hide Italian</button>
   <div id="Eng">
-    <h3>If you were coming in the Fall</h3><br><br>
+    <br><h3>If you were coming in the Fall</h3><br><br>
     <p>
       If you were coming in the Fall,<br>
       <span class="self">I</span>'d brush the Summer by<br>
@@ -1174,7 +1174,7 @@ function showFallIt(){
     </p>
   </div>
   <div id="secondLanguage">
-    <h3>Se tu venissi in autunno</h3>
+    <h3>Se tu venissi in autunno</h3><br><br>
     <p>
       Se tu venissi in autunno,<br>
       io scaccerei via l'estate<br>

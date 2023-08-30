@@ -129,6 +129,7 @@ nav ul li a{
   float: right;
   height: 700px;
   margin-bottom: 20px;
+  overflow: auto;
 }
 
 #themes{
@@ -205,6 +206,81 @@ a.active, a:hover{
   font-size: 48px;
   font-weight: 700;
 }
+
+#responsive{
+  display: none;
+}
+
+@media screen and (max-width: 1200px){
+  nav ul li{
+    display: none;
+  }
+  #responsive{
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 70%;
+    line-height: 60px;
+    position: relative;
+  }
+  .dropdown-content {
+    position: absolute;
+    background-color: rgb(213, 0, 0);
+    z-index: 1;
+    border: 2px solid black;
+    width: 170px;
+    line-height: 50px;
+  }
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  #hero h2{
+    padding-left: 70%;
+  }
+  #hero .button{
+    margin-left: 70%;
+  }
+
+}
+@media screen and (max-width: 900px){
+  #menuindex{
+    font-size: smaller;
+  }
+  #menuindex h3{
+    font-size:medium;
+  }
+  #menuindex #sappho{
+    font-size: medium;
+  }
+  #menuindex #dickinson{
+    font-size: medium;
+  }
+  #menuindex #kaur{
+    font-size: medium;
+  }
+  #menuindex{
+    overflow-y: auto;
+  }
+}
+@media screen and (max-width: 600px){
+  #menuindex #metadata{
+  padding: 2px;
+  }
+  #menuindex #sappho{
+    font-size: small;
+  }
+  #menuindex #dickinson{
+    font-size: small;
+  }
+  #menuindex #kaur{
+    font-size: small;
+  }
+}  
 
 @media (max-height: 768px), (max-width: 1200px) {
   #hero {
@@ -507,7 +583,7 @@ a.active, a:hover{
   font-size: 40%;
 }
 
-#langButton{
+.services #langButton{
   cursor: pointer;
   font-size: 90%;
   border: solid 1px black;
@@ -519,8 +595,25 @@ a.active, a:hover{
   text-shadow: 2px 2px 5px rgb(255, 251, 0);;
 }
 
-#langButton:hover{
+.services #langButton:hover{
   text-shadow: 2px 2px 10px rgb(213, 0, 0);
+}
+
+#chosenpoem{
+  text-align: left;
+  position: relative;
+  overflow: auto;
+}
+#chosenpoem #Eng{
+  float:left;
+  max-width: 50%;
+  padding-top: 20px;
+}
+#chosenpoem #secondLanguage{
+  position:relative;
+  text-align: left;
+  float:left;
+  max-width: 50%;
 }
 
 .services #clickable{
@@ -604,12 +697,6 @@ a.active, a:hover{
 
 #menuindex a {
   text-decoration: none;
-  text-align: center;
-}
-
-#menuindex hr {
-  border: none;
-  margin: 20px 0;
   text-align: center;
 }
 
