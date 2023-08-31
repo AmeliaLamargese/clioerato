@@ -1420,3 +1420,24 @@ function posback(){
     <button type="button" onclick="pos()" id="metadata" class="pos">Positives</button>
   `;
 }
+
+//functions to change css path
+function bembo(){
+  var x=document.getElementById("linkStyle");
+  x.setAttribute("href", "css/bembo.css");
+}
+
+function sixty(){
+  var x=document.getElementById("linkStyle");
+  x.setAttribute("href", "css/60sad.css");
+}
+
+function deco(){
+  var x=document.getElementById("linkStyle");
+  x.setAttribute("href", "css/deco.css");
+}
+
+function social(){
+  var x=document.getElementById("linkStyle");
+  x.setAttribute("href", "css/social2030.css");
+}

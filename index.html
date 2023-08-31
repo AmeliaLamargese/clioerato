@@ -11,7 +11,7 @@
   <!-- CSS File -->
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--to visualize in all browsers-->
-  <link href="css/bembo.css" rel="stylesheet"> <!--cambiare il path a seconda del css scelto e cambiarlo anche nelle altre pagine HTMl-->
+  <link id="linkStyle" href="css/bembo.css" rel="stylesheet"> <!--cambiare il path a seconda del css scelto e cambiarlo anche nelle altre pagine HTMl-->
 
 </head>
 
@@ -38,10 +38,10 @@
           <div class="dropdown">
             <span id="themes">Themes <img src="img/menu.png" width="10"></span>
             <div class="dropdown-content">
-              <a>Bembo</a>
-              <a>Deco</a>
-              <a>60sad</a>
-              <a>Social2030</a>
+              <button onclick="bembo()" class="styleButton"><a>Bembo</a></button>
+              <button onclick="deco()" class="styleButton"><a>Deco</a></button>
+              <button onclick="sixty()" class="styleButton"><a>60sad</a></button>
+              <button onclick="social()" class="styleButton"><a>Social2030</a></button>
             </div>
           </div>
         </li>

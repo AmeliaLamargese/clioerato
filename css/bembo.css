@@ -165,7 +165,7 @@ a.active, a:hover{
   background-color: rgb(213, 0, 0);
   z-index: 1;
   border: 2px solid black;
-  width: 150%;
+  width:fit-content;
   line-height: 20px;
 }
 
@@ -177,7 +177,9 @@ a.active, a:hover{
   margin-left: 5px;
 }
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 #hero {
   width: 100%;
@@ -244,6 +246,17 @@ a.active, a:hover{
   }
   #hero .button{
     margin-left: 70%;
+    width: 100%;
+  }
+  .services .row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .theteam .row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
 }
@@ -721,4 +734,10 @@ a.active, a:hover{
 
 #clear{
   clear: both;
+}
+
+.styleButton{
+  background-color: inherit;
+  border: none;
+  font-family: "Bembo", "serif";
 }
