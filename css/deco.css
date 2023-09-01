@@ -33,6 +33,7 @@ img {
 
 body {
   background-image: url(backgroundimg/last.jpg);
+  cursor: url(cursor/decopointer.png), auto;
   /*font-family: "Futura", sans-serif; */
 }
 
@@ -65,47 +66,67 @@ p {
 /*header css*/
 
 nav {
-  box-sizing: border-box; 
   border: 10px solid rgb(156, 127, 0);
   padding: 20px;
-  height: 250px;
+  height: 150px;
   width: 100%;   
   background-color:  rgb(0, 47, 25);
-  display: flex; /*to center the logo and align the items*/
-  flex-direction: column;
-  align-items: center; 
-  margin-bottom: 40px;
-  
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.logoimg{
+  margin-left: 20px;
+  padding-top: 7px;
+  float: left;
 }
 
 label.logo{
   color: rgb(178, 57, 135);
-  font-size: 90px;
-  text-align: center;
-
-
+  font-size: 65px;
+  float: left;
   font-family: "Rialto", sans-serif;
 }
   
 nav ul {
-  list-style-type: none; 
   display: flex;   /*for the elments childs*/
-  margin-bottom: 10px;
+  float: right;
   padding: 20px;
-  margin-top: 50px;
-  
+  flex-direction: row;
+}
+nav ul li{
+  display: inline-block;
 }
 
 nav ul li a {
   color: rgb(178, 57, 135); /*rgb(156, 127, 0);*/
   font-family: "Coventry", sans-serif;
-  font-size: 40px;
-  padding: 80px 80px;
-  text-decoration: none; 
+  font-size: 20px;
+  padding: 20px 20px;
   border: 5px solid rgb(156, 127, 0);
-  padding: 20px;
   background-color:  rgb(0, 47, 25);
-  margin-right: 40px;
+}
+
+#leftmenu{
+  width: 30%;
+  float: left;
+  height: 700px;
+}
+
+.issuesintro{
+  width: 70%;
+  float: right;
+  height: 700px;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+#issuesgrid{
+  clear: both;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 
@@ -116,24 +137,20 @@ nav ul li a {
   padding: 0;
   margin-bottom: 20px;
   position: relative;
-  z-index: 1;
   border: 5px solid rgb(156, 127, 0);
-  background-color: rgb(0, 47, 25);
- 
+  background-image: url(slide/deco.jpg);
 }
 
 #hero .carousel-item {
   width: 100%;
   height: 70vh;
   border: 5px solid rgb(156, 127, 0);
-  background-image: url(img/slide/slide-1.jpg);
-  background-size: cover;
-  filter: sepia(100%);
   opacity: 0.9;
 }
 
-
-
+#responsive{
+  display: none;
+}
 
 #hero .carousel-content {
   display: flex;
@@ -141,19 +158,16 @@ nav ul li a {
   align-items: center;
   justify-content: center;
   text-align: center;
-
 }
 
 #hero h2 {
   margin-top: 250px;
   color: rgb(0, 47, 25);
   font-family: "Rialto", sans-serif;
-  font-size: 60px;
+  font-size: 50px;
   background-color: rgb(216, 213, 166);
   border-color: rgb(0, 47, 25);
   border: 5px solid;
-
-
 }
 
 #hero .button {
