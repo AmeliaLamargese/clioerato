@@ -179,6 +179,7 @@ a.active, a:hover{
 
 .dropdown:hover .dropdown-content {
   display: block;
+  transition: .5s;
 }
 
 #hero {
@@ -589,6 +590,7 @@ a.active, a:hover{
 }
 .services #authorbtn:hover{
   text-shadow: 2px 2px 10px rgb(213, 0, 0);
+  transition: .5s;
 }
 
 .services #hidden{
@@ -610,6 +612,7 @@ a.active, a:hover{
 
 .services #langButton:hover{
   text-shadow: 2px 2px 10px rgb(213, 0, 0);
+  transition: .5s;
 }
 
 #chosenpoem{
@@ -639,6 +642,7 @@ a.active, a:hover{
 
 .services #clickable:hover{
   text-shadow: 2px 2px 10px rgb(213, 0, 0);
+  transition: .5s;
 }
 
 .services #metadata{

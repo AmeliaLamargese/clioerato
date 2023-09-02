@@ -64,11 +64,16 @@ p {
 }
 
 /*header css*/
+a.active, a:hover{
+  text-shadow: 2px 2px 10px rgb(255, 137, 226);
+  transition: .5s;
+  cursor: pointer;
+} 
 
 nav {
   border: 10px solid rgb(156, 127, 0);
   padding: 20px;
-  height: 150px;
+  height: 120px;
   width: 100%;   
   background-color:  rgb(0, 47, 25);
   position: fixed;
@@ -107,28 +112,35 @@ nav ul li a {
   background-color:  rgb(0, 47, 25);
 }
 
+#themes{
+  color: rgb(178, 57, 135); /*rgb(156, 127, 0);*/
+  font-family: "Coventry", sans-serif;
+  font-size: 20px;
+  padding: 20px 20px;
+  border: 5px solid rgb(156, 127, 0);
+  background-color:  rgb(0, 47, 25);
+}
+
 #leftmenu{
   width: 30%;
   float: left;
-  height: 700px;
+  height: 800px;
+}
+
+#leftmenu h2{
+  font-size: 33px;
 }
 
 .issuesintro{
   width: 70%;
   float: right;
-  height: 700px;
+  height: 800px;
   margin-bottom: 20px;
-  overflow: auto;
 }
 
 #issuesgrid{
   clear: both;
 }
-
-a:hover {
-  cursor: pointer;
-}
-
 
 #hero {
   width: 100%;
@@ -152,12 +164,16 @@ a:hover {
   display: none;
 }
 
-#hero .carousel-content {
+#hero .carousel-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 800px;
+  padding-bottom: 120px;
 }
 
 #hero h2 {
@@ -168,6 +184,8 @@ a:hover {
   background-color: rgb(216, 213, 166);
   border-color: rgb(0, 47, 25);
   border: 5px solid;
+  margin-bottom: 30px;
+  padding: 10px;
 }
 
 #hero .button {
@@ -179,8 +197,160 @@ a:hover {
   padding: 20px;
   background-color: rgb(216, 213, 166);
   color: rgb(178, 57, 135);
+}
+#hero .carousel-content {
+  text-align: center;
+}
+
+#chosenpoem{
+  width: 70%;
+  float: right;
+  height: 800px;
+  overflow: auto;
+}
+
+#clear{
+  clear: both;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width:fit-content;
+  border: 5px solid rgb(156, 127, 0);
+  background-color:  rgb(0, 47, 25);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  border: 2px solid rgb(156, 127, 0);
+  font-size: 15px;
+  padding: 15px;
+}
+
+nav ul li button{
+  border: none;
+  background-color: inherit;
+  width: 100%;
+  padding: 0;
+  text-align: left;
+}
+
+@media screen and (max-width: 1200px){
+  nav ul li{
+    display: none;
+  }
+  #responsive{
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    position: fixed;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .dropdown-content {
+    position: absolute;
+    background-color: rgb(0, 47, 25);
+    z-index: 1;
+    border: 5px solid rgb(156, 127, 0);
+    width: 170px;
+  }
+  .dropdown-content a {
+    color: rgb(178, 57, 135); /*rgb(156, 127, 0);*/
+    font-family: "Coventry", sans-serif;
+    border: 2px solid rgb(156, 127, 0);
+    font-size: 18px;
+    padding: 20px;
+    background-color:  rgb(0, 47, 25);
+  }
+  #hero h2{
+    margin-left: 30px;
+    font-size: 30px;
+  }
+  #hero .button{
+    margin-left: 30px;
+    padding: 10px;
+  }
+  .services .row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .theteam .row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  #hero .carousel-container{
+    right: 500px;
+  }
 
 }
+@media screen and (max-width: 900px){
+  #menuindex{
+    font-size: smaller;
+  }
+  #menuindex h3{
+    font-size:medium;
+  }
+  #menuindex #sappho{
+    font-size: medium;
+  }
+  #menuindex #dickinson{
+    font-size: medium;
+  }
+  #menuindex #kaur{
+    font-size: medium;
+  }
+  #menuindex{
+    overflow-y: auto;
+  }
+  #hero .carousel-container{
+    right: 200px;
+  }
+  #leftmenu{
+    width: 100%;
+    height:fit-content;
+  }
+  
+  .issuesintro{
+    width: 100%;
+    height:fit-content;
+  }
+  .theteam .row{
+    align-items: left;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 600px){
+  #menuindex #metadata{
+  padding: 2px;
+  }
+  #menuindex #sappho{
+    font-size: small;
+  }
+  #menuindex #dickinson{
+    font-size: small;
+  }
+  #menuindex #kaur{
+    font-size: small;
+  }
+  label.logo{
+    font-size: 50px;
+  }
+}  
+
 /* about*/
 .content {
   border-width: 40px;
@@ -357,6 +527,10 @@ a:hover {
 .services .row {
   display: flex;
 }
+.theteam .row{
+  display: flex;
+  justify-content: center;
+}  
 
 .icon-box {
   width: 400px; 
@@ -491,12 +665,6 @@ a:hover {
 
 }
 
-.theteam .row {
-  display: flex;
-  margin-left: 200px;
-  margin-right: 200px; 
-}
-
 .theteam .icon-box {
   width: 400px; 
   height: 500px; 
@@ -618,4 +786,114 @@ a:hover {
  
 }
 
+.services #authorbtn{
+  cursor: pointer;
+  padding: 5px;
+  font-size: 90%;
+  margin-top: 10px;
+  color: rgb(178, 57, 135);
+  font-family: "Coventry", sans-serif;
+  border: 5px solid rgb(156, 127, 0);
+  background-color:  rgb(0, 47, 25);
+}
+.services #authorbtn:hover{
+  text-shadow: 2px 2px 10px rgb(255, 137, 226);
+  transition: .5s;
+}
 
+.services #hidden{
+  visibility: hidden;
+  font-size: 40%;
+}
+
+.services #langButton{
+  cursor: pointer;
+  font-size: 90%;
+  padding: 10px;
+  border-radius: 7%;
+  margin-left: 40px;
+  color: rgb(178, 57, 135); /*rgb(156, 127, 0);*/
+  font-family: "Coventry", sans-serif;
+  border: 5px solid rgb(156, 127, 0);
+  background-color:  rgb(0, 47, 25);
+}
+
+.services #langButton:hover{
+  text-shadow: 2px 2px 10px rgb(255, 137, 226);
+  transition: .5s;
+}
+
+#chosenpoem{
+  text-align: left;
+  position: relative;
+  overflow: auto;
+}
+#chosenpoem #Eng{
+  float:left;
+  max-width: 50%;
+  padding-top: 20px;
+}
+#chosenpoem #secondLanguage{
+  position:relative;
+  text-align: left;
+  float:left;
+  max-width: 50%;
+}
+
+.services #clickable{
+  cursor: pointer;
+  padding: 5px;
+  font-size: 70%;
+  color: rgb(178, 57, 135);
+  font-family: "Coventry", sans-serif;
+  border: 2px solid rgb(156, 127, 0);
+  background-color:  rgb(0, 47, 25);
+  
+}
+
+.services #clickable:hover{
+  text-shadow: 2px 2px 10px rgb(255, 137, 226);
+  transition: .5s;
+}
+
+.services #metadata{
+  cursor: pointer;
+  font-size: 90%;
+  border: solid 1px black;
+  padding: 10px;
+  border-radius: 7%;
+  font-family: "Coventry", sans-serif;
+  margin: 3px;
+}
+
+#sappho{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#dickinson{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#kaur{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#menuindex .self{
+  background-color: gold;
+}
+#menuindex .body{
+  background-color: #ff77d2;
+}
+#menuindex .place{
+  background-color:  #77bdff;
+}
+#menuindex .neg{
+  background-color: #ff5757;
+}
+#menuindex .pos{
+  background-color: #65ff57;
+}
