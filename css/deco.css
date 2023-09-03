@@ -5,23 +5,38 @@
 
 /*@font-face*/
 @font-face {
+  font-family: "Bembo";
+  src: url(fonts/Bembo-Bold-Font.ttf);
+}
+
+@font-face {
+  font-family: "Hippie";
+  src: url("fonts/1960s\ Hippie.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Future";
+  src: url("fonts/futureS.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "Rialto";
-  src: url("fonts/RialtoNF.ttf") format("truetype"),
+  src: url("fonts/RialtoNF.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Coventry";
-  src: url("fonts/CoventryGardenNF.ttf") format("truetype"),
+  src: url("fonts/CoventryGardenNF.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Riot";
-  src: url("fonts/RiotSquadNF.ttf") format("truetype"),
+  src: url("fonts/RiotSquadNF.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Fancy";
-  src: url("fonts/FancyPantsNF.ttf") format("truetype"),
+  src: url("fonts/FancyPantsNF.ttf") format("truetype");
 }
 
 
@@ -82,13 +97,14 @@ nav {
 }
 .logoimg{
   margin-left: 20px;
-  padding-top: 7px;
+  padding-top: 5px;
+  padding-right: 5px;
   float: left;
 }
 
 label.logo{
   color: rgb(178, 57, 135);
-  font-size: 65px;
+  font-size: 60px;
   float: left;
   font-family: "Rialto", sans-serif;
 }
@@ -124,18 +140,19 @@ nav ul li a {
 #leftmenu{
   width: 30%;
   float: left;
-  height: 800px;
+  margin-bottom: 20px;
 }
 
 #leftmenu h2{
-  font-size: 33px;
-}
-
-.issuesintro{
-  width: 70%;
-  float: right;
-  height: 800px;
-  margin-bottom: 20px;
+  font-size: 40px;
+  text-align: justify;
+  font-family:"Coventry";
+  color: rgb(178, 57, 135);
+  border: 5px solid rgb(156, 127, 0);
+  padding: 20px;
+  background-color:  rgb(0, 47, 25);
+  font-weight: bold;
+  text-align: center;
 }
 
 #issuesgrid{
@@ -207,6 +224,14 @@ nav ul li a {
   float: right;
   height: 800px;
   overflow: auto;
+  text-align: left;
+  position: relative;
+}
+#chosenpoem p{
+  color: rgb(0, 47, 25);
+}
+#chosenpoem h3{
+  color: rgb(0, 47, 25);
 }
 
 #clear{
@@ -226,10 +251,12 @@ nav ul li a {
   background-color:  rgb(0, 47, 25);
 }
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
+
 .dropdown-content a {
-  display: block;
+  display: flex;
   border: 2px solid rgb(156, 127, 0);
   font-size: 15px;
   padding: 15px;
@@ -242,8 +269,7 @@ nav ul li button{
   padding: 0;
   text-align: left;
 }
-
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1300px){
   nav ul li{
     display: none;
   }
@@ -252,12 +278,12 @@ nav ul li button{
     border: none;
     cursor: pointer;
     display: inline-block;
-    position: fixed;
+    position: relative;
     margin-left: 20px;
     margin-top: 20px;
   }
   .dropdown-content {
-    position: absolute;
+    position: relative;
     background-color: rgb(0, 47, 25);
     z-index: 1;
     border: 5px solid rgb(156, 127, 0);
@@ -270,7 +296,11 @@ nav ul li button{
     font-size: 18px;
     padding: 20px;
     background-color:  rgb(0, 47, 25);
+    display: flex;
   }
+}
+
+@media screen and (max-width: 1200px){
   #hero h2{
     margin-left: 30px;
     font-size: 30px;
@@ -296,6 +326,17 @@ nav ul li button{
   }
 
 }
+@media screen and (max-width: 1070px){
+  #leftmenu h2{
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 900px){
+  .issuesintro { 
+    width: 70%;
+    float: right;
+  }
+}
 @media screen and (max-width: 900px){
   #menuindex{
     font-size: smaller;
@@ -318,19 +359,41 @@ nav ul li button{
   #hero .carousel-container{
     right: 200px;
   }
+  #servicesIssues{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   #leftmenu{
     width: 100%;
-    height:fit-content;
   }
-  
   .issuesintro{
     width: 100%;
-    height:fit-content;
   }
+  .issuesintro h2{
+    margin:0;
+  }
+  .issuesintro .red-bold{
+    margin-right:0;
+    margin-left:0;
+  }
+ 
   .theteam .row{
     align-items: left;
     margin-left: 0;
     padding-left: 0;
+  }
+  label.logo{
+    font-size: 35px;
+    padding-top: 10px;
+  }
+  .logoimg{
+    margin-left: 0;
+  }
+  #responsive{
+    margin-left: 5px;
+    margin-top: 15px;
   }
 }
 @media screen and (max-width: 600px){
@@ -346,23 +409,13 @@ nav ul li button{
   #menuindex #kaur{
     font-size: small;
   }
-  label.logo{
-    font-size: 50px;
-  }
 }  
 
 /* about*/
-.content {
-  border-width: 40px;
-  margin-top: 20px;
-  border: 5px solid rgb(156, 127, 0);
-  padding: 20px;
-  background-color:  rgba(0, 47, 25, 0.8);
-  color: rgba(220, 195, 118, 0.851);
-
-
-  
+.about{
+  margin: 30px;
 }
+
 .content h2{
   padding: 30px;
   text-align: center;
@@ -388,7 +441,8 @@ nav ul li button{
 .documentation {
   border: 10px solid rgb(156, 127, 0);
   padding: 20px;
-  background-color: rgb(0, 47, 25);
+  background-color: rgba(0, 47, 25, 0.85);
+  margin: 30px;
 }
 .documentation h2 {
   background-color:  rgb(156, 127, 0);
@@ -435,10 +489,9 @@ nav ul li button{
 .p-project  {
   font-size: 20px;
   text-align: justify;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 30px;
   border: 5px solid rgb(156, 127, 0);
-  background-color: rgb(0, 47, 25);
+  background-color: rgba(0, 47, 25, 0.85);
   padding: 20px;
   font-family: "Riot", sans-serif;
   color: rgba(220, 195, 118, 0.851);
@@ -449,7 +502,7 @@ nav ul li button{
 
 /*services section*/
 .services {
-  margin-left: 20px;
+  margin: 30px;
   font-family: sans-serif;
   color: rgba(220, 195, 118, 0.851);
 }
@@ -457,24 +510,17 @@ nav ul li button{
 .services  h2 {
   text-align: center;
   color: rgb(178, 57, 135);
-  margin-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
   border-width: 40px;
-  padding-bottom: 10px;
   border: 10px solid rgb(156, 127, 0);
-  padding: 20px;
   background-color: rgb(0, 47, 25);
   font-family: "Fancy";
   margin-bottom: 20px;
-
 }
 
 .services h3 {
   text-align: center;
   color: rgba(220, 195, 118, 0.851);
   font-family: "Riot";
-
 }
 
 .services  h4 {
@@ -500,9 +546,7 @@ nav ul li button{
   background-color:  rgba(0, 47, 25, 0.8);
   font-family: "Riot", sans-serif;
   margin-top: 20px;
-  }
-
-
+}
 
 .services h3 {
   margin-top: 30px;
@@ -616,7 +660,9 @@ nav ul li button{
 .back-to-top:hover {
   text-decoration: none;
 }
-
+.theteam{
+  margin: 30px;
+}
 
 .theteam  h2 {
   text-align: center ;
@@ -685,7 +731,7 @@ nav ul li button{
   border-top:  5px solid rgb(156, 127, 0);
   border-left:  5px solid rgb(156, 127, 0);
   border-right:  5px solid rgb(156, 127, 0);
-  
+  height: 750px;
 }
 
 
@@ -734,25 +780,29 @@ nav ul li button{
   margin: 20px 0;
   text-align: center;
 }
-.issuesintro { 
-  border-width: 40px;
-  margin-top: 20px;
-  border: 10px solid rgb(156, 127, 0);
-  padding: 20px;
-  background-color:  rgba(0, 47, 25, 0.8);
+
+.red-bold{
+  background-color:  rgba(0, 47, 25, 0.85);
   color: rgba(220, 195, 118, 0.851);
   font-family: "Riot";
-
-}
-.issuesintro h2 {
-  margin-bottom: 20px;
+  border: 5px solid rgb(156, 127, 0);
   padding: 30px;
-  text-align: center;
-  color:rgb(178, 57, 135);
-  font-family: "Fancy", sans-serif;
+  height: 750px;
+  overflow: auto;
+}
+
+.issuesintro h2 {
+  font-size: 40px;
+  text-align: justify;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family:"Coventry";
+  color: rgb(178, 57, 135);
   border: 5px solid rgb(156, 127, 0);
   padding: 20px;
   background-color:  rgb(0, 47, 25);
+  font-weight: bold;
+  text-align: center;
 }
 
 .container h2 {
@@ -774,14 +824,21 @@ nav ul li button{
 .row {
   margin-bottom: 30px;
 }
-
+#textsContainer{
+  width: 100%;
+  padding: 10px;
+  border: 5px solid rgb(156, 127, 0);
+  padding: 20px;
+  background-color:  rgba(255, 238, 186, 0.851);
+  font-family: "Riot";
+}
 
 .container {
   width: 100%;
   padding: 10px;
   border: 5px solid rgb(156, 127, 0);
   padding: 20px;
-  background-color:  rgb(0, 47, 25);
+  background-color:  rgba(0, 47, 25, 0.85);
   font-family: "Riot";
  
 }
@@ -823,11 +880,6 @@ nav ul li button{
   transition: .5s;
 }
 
-#chosenpoem{
-  text-align: left;
-  position: relative;
-  overflow: auto;
-}
 #chosenpoem #Eng{
   float:left;
   max-width: 50%;
@@ -896,4 +948,30 @@ nav ul li button{
 }
 #menuindex .pos{
   background-color: #65ff57;
+}
+#bemboButton a:hover{
+  background-image: url(backgroundimg/letterbg.jpg);
+  font-family: "Bembo", "serif";
+  color: rgb(213, 0, 0);
+  font-weight: bold;
+}
+
+#decoButton a:hover{
+  background-image: url(backgroundimg/last.jpg);
+  font-family:"Coventry";
+  color: rgb(178, 57, 135);
+  font-weight: bold;
+}
+
+#sixtyButton a:hover{
+  background-image: url(backgroundimg/60sad.jpg);
+  font-family: "Hippie";
+  color: yellow;
+}
+
+#socialButton a:hover{
+  font-family: "Future";
+  color: black;
+  background-image: url(backgroundimg/future.jpg);
+  font-weight: bold;
 }

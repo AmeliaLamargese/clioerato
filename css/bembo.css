@@ -30,6 +30,21 @@
   src: url(fonts/Bembo-Bold-Font.ttf);
 }
 
+@font-face {
+  font-family: "Hippie";
+  src: url("fonts/1960s\ Hippie.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Future";
+  src: url("fonts/futureS.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Coventry";
+  src: url("fonts/CoventryGardenNF.ttf") format("truetype");
+}
+
 /*filters*/
 img {
   filter: grayscale(100%);
@@ -122,6 +137,7 @@ nav ul li a{
   width: 30%;
   float: left;
   height: 700px;
+  padding-left: 20px;
 }
 
 .issuesintro{
@@ -172,13 +188,13 @@ a.active, a:hover{
 .dropdown-content a {
   color: black;
   text-decoration: none;
-  display: block;
-  font-size: 15px;
-  margin-left: 5px;
+  display: flex;
+  font-size: 18px;  
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: flex;
+  flex-direction: column;
   transition: .5s;
 }
 
@@ -238,7 +254,7 @@ a.active, a:hover{
   .dropdown-content a {
     color: black;
     text-decoration: none;
-    display: block;
+    display: flex;
     font-size: 20px;
     margin-left: 10px;
   }
@@ -744,4 +760,31 @@ a.active, a:hover{
   background-color: inherit;
   border: none;
   font-family: "Bembo", "serif";
+}
+
+#bemboButton a:hover{
+  background-image: url(backgroundimg/letterbg.jpg);
+  font-family: "Bembo", "serif";
+  color: rgb(213, 0, 0);
+  font-weight: bold;
+}
+
+#decoButton a:hover{
+  background-image: url(backgroundimg/last.jpg);
+  font-family:"Coventry";
+  color: rgb(178, 57, 135);
+  font-weight: bold;
+}
+
+#sixtyButton a:hover{
+  background-image: url(backgroundimg/60sad.jpg);
+  font-family: "Hippie";
+  color: yellow;
+}
+
+#socialButton a:hover{
+  font-family: "Future";
+  color: black;
+  background-image: url(backgroundimg/future.jpg);
+  font-weight: bold;
 }

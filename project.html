@@ -38,10 +38,10 @@
           <div class="dropdown">
             <span id="themes">Themes <img src="img/menu.png" width="10"></span>
             <div class="dropdown-content">
-              <button onclick="bembo()" class="styleButton"><a>Bembo</a></button>
-              <button onclick="deco()" class="styleButton"><a>Deco</a></button>
-              <button onclick="sixty()" class="styleButton"><a>60sad</a></button>
-              <button onclick="social()" class="styleButton"><a>Social2030</a></button>
+              <button onclick="changeTheme('css/bembo.css')" class="styleButton" id="bemboButton"><a>Bembo</a></button>
+              <button onclick="changeTheme('css/deco.css')" class="styleButton" id="decoButton"><a>Deco</a></button>
+              <button onclick="changeTheme('css/60sad.css')" class="styleButton" id="sixtyButton"><a>60sad</a></button>
+              <button onclick="changeTheme('css/social2030.css')" class="styleButton" id="socialButton"><a>Social2030</a></button>
             </div>
           </div>
         </li>
@@ -90,29 +90,23 @@
           The <b>purpose</b> of this website is to explore various types of typographic and layout style for text documents, as an end-of-course project for the <a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/454464">Information Modeling and Web technologies</a> course of the Master Degree in <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Digital Humanities and Digital Knowledge</a> of the <a href="https://www.unibo.it/en/homepage">University of Bologna</a>, under prof. <a href="https://www.unibo.it/sitoweb/fabio.vitali">Fabio Vitali</a>.<br><br>
           The <b>documents</b> contained in this web site have been selected for their length and complexity from external sources. Their publication here is not intended to be an alternative or replace their original locations.<br>
           <br>Bibliography of Rupi Kaur's poems:<br>
-          <ul>
-            <li>(English version - original) - R. Kaur, <a href="https://rupikaur.com/pages/home-body-books">home body</a>, 2020, p. 107, Simon & Schuster.</li>
-            <li>(Italian version) - Alessandro Storti, home body, il mio corpo è la mia casa, 2021, p. 109, Tre60, Milan</li>
-            <li>(English version - original) - R. Kaur, <a href="https://rupikaur.com/pages/the-sun-and-her-flowers-books">the sun and her flowers</a>, 2017, p. 103, Simon & Schuster.</li>
-            <li>(Italian version) - Alessandro Storti, the sun and her flowers, il sole e i suoi fiori, 2018, p. 102, Tre60, Milan</li>
-            <li>(English version - original) - R. Kaur, <a href="https://rupikaur.com/pages/milk-and-honey-books">milk and honey</a>, 2015, p. 89, Andrew McMeel Publishing.</li>
-            <li>(Italian version) - Alessandro Storti, milk and honey, 2017, p. 97, Tre60, Milan</li>
-          </ul>
+          - (English version - original) - R. Kaur, <a href="https://rupikaur.com/pages/home-body-books">home body</a>, 2020, p. 107, Simon & Schuster.<br>
+          - (Italian version) - Alessandro Storti, home body, il mio corpo è la mia casa, 2021, p. 109, Tre60, Milan<br>
+          - (English version - original) - R. Kaur, <a href="https://rupikaur.com/pages/the-sun-and-her-flowers-books">the sun and her flowers</a>, 2017, p. 103, Simon & Schuster.<br>
+          - (Italian version) - Alessandro Storti, the sun and her flowers, il sole e i suoi fiori, 2018, p. 102, Tre60, Milan<br>
+          - (English version - original) - R. Kaur, <a href="https://rupikaur.com/pages/milk-and-honey-books">milk and honey</a>, 2015, p. 89, Andrew McMeel Publishing.<br>
+          - (Italian version) - Alessandro Storti, milk and honey, 2017, p. 97, Tre60, Milan<br>
           <br>
-          <p>Bibliography of Emily Dickinson's poems:<br></p>
-          <ul>
-            <li>Emily Dickinson, <i>Poesie</i>, Milano, Edizione speciale per il <i>Corriere della Sera</i>, 2004.</li>
-            <li>References for further information avaible at <a href="https://www.emilydickinson.it/f0051-0100.html">Emily Dickinson, <i>The complete poems</i>, Traduzione e note di Giuseppe Ierolli</i></a></li>
-            <li>References for images from the manuscripts avaible at <a href="https://www.gutenberg.org/files/12242/12242-h/12242-h.htm">Project Gutenberg's Poems: Three Series, Complete, by Emily Dickinson</a></li>
-          </ul>
+          Bibliography of Emily Dickinson's poems:<br>
+          - Emily Dickinson, <i>Poesie</i>, Milano, Edizione speciale per il <i>Corriere della Sera</i>, 2004.<br>
+          - References for further information avaible at <a href="https://www.emilydickinson.it/f0051-0100.html">Emily Dickinson, <i>The complete poems</i>, Traduzione e note di Giuseppe Ierolli</i></a><br>
+          - References for images from the manuscripts avaible at <a href="https://www.gutenberg.org/files/12242/12242-h/12242-h.htm">Project Gutenberg's Poems: Three Series, Complete, by Emily Dickinson</a><br>
           <br>
-          <p>Bibliography of Sappho's poems:<br></p>
-          <ul>
-            <li>Diane J. Raynor (Translation), André Lardinois (Introduction),<i>Sappho: A New Translation of the complete works</i>, by  Cambridge University Press, 2014.</i></li>
-            <li>References for further information avaible at <a href="https://www.uh.edu/~cldue/texts/sappho.html"><i>POEMS OF SAPPHO</i>, TRANSLATED BY JULIA DUBNOFF</a></li>
-          </ul>
+          Bibliography of Sappho's poems:<br>
+          - Diane J. Raynor (Translation), André Lardinois (Introduction),<i>Sappho: A New Translation of the complete works</i>, by  Cambridge University Press, 2014.</i><br>
+          - References for further information avaible at <a href="https://www.uh.edu/~cldue/texts/sappho.html"><i>POEMS OF SAPPHO</i>, TRANSLATED BY JULIA DUBNOFF</a><br>
           <br>
-          <p>All copyrights and related rights on the content remain with their original owners. All copyright on the typographic and layout choices are 2023 © <i>Clio&Erato</i>.</p>
+          All copyrights and related rights on the content remain with their original owners. All copyright on the typographic and layout choices are 2023 © <i>Clio&Erato</i>.
         </p>
       </div>
     </section>  

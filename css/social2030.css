@@ -8,17 +8,32 @@
 /*@font-face*/
 @font-face {
   font-family: "Social";
-  src: url("fonts/SocialMedia.ttf") format("truetype"),
+  src: url("fonts/SocialMedia.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Simple";
-  src: url("fonts/Simple\ script.ttf") format("truetype"),
+  src: url("fonts/Simple\ script.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Future";
-  src: url("fonts/futureS.ttf") format("truetype")
+  src: url("fonts/futureS.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bembo";
+  src: url(fonts/Bembo-Bold-Font.ttf);
+}
+
+@font-face {
+  font-family: "Hippie";
+  src: url("fonts/1960s\ Hippie.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Coventry";
+  src: url("fonts/CoventryGardenNF.ttf") format("truetype");
 }
 
 
@@ -69,7 +84,7 @@ p {
 }
 
 body {
-  background-color: #111;
+  background-image: url(backgroundimg/future.jpg);
   margin-top: 20px;;
   margin-top: 20px ;
   margin-left: 20px;
@@ -651,4 +666,31 @@ font-family: "Future";
   width: 400px; 
   height: 5hv; 
 
+}
+
+#bemboButton a:hover{
+  background-image: url(backgroundimg/letterbg.jpg);
+  font-family: "Bembo", "serif";
+  color: rgb(213, 0, 0);
+  font-weight: bold;
+}
+
+#decoButton a:hover{
+  background-image: url(backgroundimg/last.jpg);
+  font-family:"Coventry";
+  color: rgb(178, 57, 135);
+  font-weight: bold;
+}
+
+#sixtyButton a:hover{
+  background-image: url(backgroundimg/60sad.jpg);
+  font-family: "Hippie";
+  color: yellow;
+}
+
+#socialButton a:hover{
+  font-family: "Future";
+  color: black;
+  background-image: url(backgroundimg/future.jpg);
+  font-weight: bold;
 }

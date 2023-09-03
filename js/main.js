@@ -169,6 +169,26 @@
 
 })()
 
+// function to change css
+
+$(document).ready(function(){
+
+  var start_style = sessionStorage.getItem('href');
+  switch (start_style) {
+    case 'css/bembo.css':
+      document.getElementById('linkStyle').setAttribute('href', 'css/bembo.css');
+      break;
+    case 'css/deco.css':
+      document.getElementById('linkStyle').setAttribute('href', 'css/deco.css');
+      break;
+    case 'css/60sad.css':
+      document.getElementById('linkStyle').setAttribute('href', 'css/60sad.css');
+      break;
+    case 'css/social2030.css':
+      document.getElementById('linkStyle').setAttribute('href', 'css/social2030.css');
+      break;}
+});
+
 //flags to control if the highlight functions are active, and if they are, they stay active even when other
 //functions are called, such as the ones for showing and hiding the second language of the poems:
 //a flag is set true when the corresponding highlighting function is called and set false when 
@@ -1421,24 +1441,10 @@ function posback(){
   `;
 }
 
-//functions to change css path
+//function to store css path
 
-function bembo(){
-  var x=document.getElementById("linkStyle");
-  x.setAttribute("href", "css/bembo.css");
-}
-
-function sixty(){
-  var x=document.getElementById("linkStyle");
-  x.setAttribute("href", "css/60sad.css");
-}
-
-function deco(){
-  var x=document.getElementById("linkStyle");
-  x.setAttribute("href", "css/deco.css");
-}
-
-function social(){
-  var x=document.getElementById("linkStyle");
-  x.setAttribute("href", "css/social2030.css");
+function changeTheme(newTheme) {
+  const elem = document.getElementById('linkStyle');
+  elem.href = newTheme;
+  sessionStorage.setItem('href', newTheme);
 }
