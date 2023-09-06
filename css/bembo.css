@@ -94,6 +94,8 @@ nav {
   top: 0;
   z-index: 1;
   line-height: 80px;
+  animation: fadeInDown;
+  animation-duration: 2s;
 }
 
 label.logo{
@@ -349,6 +351,10 @@ a.active, a:hover{
   text-decoration: none;
   font-weight: bold;
 }
+#hero .button:hover{
+  animation: pulse;
+  animation-duration: 2s;
+}
 
 /* about*/
 .content h2{
@@ -428,7 +434,7 @@ a.active, a:hover{
   transition: all ease-in-out 0.3s;
   border-width: 5px;
   border-color:rgb(0, 0, 0);
-  }
+}
 
 .services h2 {
   color: rgb(213, 0, 0);
@@ -579,7 +585,6 @@ a.active, a:hover{
 }
 .container {
   width: 100%;
-  
   padding: 10px;
 }
 

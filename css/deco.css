@@ -94,6 +94,8 @@ nav {
   position: fixed;
   top: 0;
   z-index: 1;
+  animation: flipInX;
+  animation-duration: 2s;
 }
 .logoimg{
   margin-left: 20px;
@@ -208,6 +210,11 @@ nav ul li a {
   background-color: rgb(216, 213, 166);
   color: rgb(178, 57, 135);
 }
+#hero .button:hover{
+  animation: bounce;
+  animation-duration: 2s;
+}
+
 #hero .carousel-content {
   text-align: center;
 }
@@ -350,7 +357,7 @@ nav ul li button{
   #menuindex #kaur{
     font-size: medium;
   }
-  #menuindex{
+  #menuindex{ 
     overflow-y: auto;
   }
   #hero .carousel-container{
@@ -955,6 +962,7 @@ nav ul li button{
 #menuindex .pos{
   background-color: #65ff57;
 }
+
 #bemboButton a:hover{
   background-image: url(backgroundimg/letterbg.jpg);
   font-family: "Bembo", "serif";

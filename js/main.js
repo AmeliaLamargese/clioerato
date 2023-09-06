@@ -195,7 +195,6 @@ $(document).ready(function(){
 //the function to remove the corresponding highlight is called.
 
 var selfflag=false;
-var bodyflag=false;
 var placeflag=false;
 var negflag=false;
 var posflag=false;
@@ -227,9 +226,6 @@ function showHome() {
 
   if (selfflag===true){
     self();
-  }
-  if (bodyflag===true){
-    body();
   }
   if (placeflag===true){
     place();
@@ -287,9 +283,6 @@ function showHomeIt(){
   if (selfflag===true){
     self();
   }
-  if (bodyflag===true){
-    body();
-  }
   if (placeflag===true){
     place();
   }
@@ -331,9 +324,6 @@ function showHate() {
 
   if (selfflag===true){
     self();
-  }
-  if (bodyflag===true){
-    body();
   }
   if (placeflag===true){
     place();
@@ -402,9 +392,6 @@ function showHateIt(){
   if (selfflag===true){
     self();
   }
-  if (bodyflag===true){
-    body();
-  }
   if (placeflag===true){
     place();
   }
@@ -449,9 +436,6 @@ function showMilk() {
 
   if (selfflag===true){
     self();
-  }
-  if (bodyflag===true){
-    body();
   }
   if (placeflag===true){
     place();
@@ -528,9 +512,6 @@ function showMilkIt(){
   if (selfflag===true){
     self();
   }
-  if (bodyflag===true){
-    body();
-  }
   if (placeflag===true){
     place();
   }
@@ -582,9 +563,6 @@ function showOde() {
 
   if (selfflag===true){
     self();
-  }
-  if (bodyflag===true){
-    body();
   }
   if (placeflag===true){
     place();
@@ -673,9 +651,6 @@ function showOdeGre(){
   if (selfflag===true){
     self();
   }
-  if (bodyflag===true){
-    body();
-  }
   if (placeflag===true){
     place();
   }
@@ -718,9 +693,6 @@ function showSappho() {
 
   if (selfflag===true){
     self();
-  }
-  if (bodyflag===true){
-    body();
   }
   if (placeflag===true){
     place();
@@ -790,9 +762,6 @@ function showSapphoGre(){
   if (selfflag===true){
     self();
   }
-  if (bodyflag===true){
-    body();
-  }
   if (placeflag===true){
     place();
   }
@@ -821,9 +790,6 @@ function showMidnight() {
 
   if (selfflag===true){
     self();
-  }
-  if (bodyflag===true){
-    body();
   }
   if (placeflag===true){
     place();
@@ -865,9 +831,6 @@ function showMidGre(){
   if (selfflag===true){
     self();
   }
-  if (bodyflag===true){
-    body();
-  }
   if (placeflag===true){
     place();
   }
@@ -908,9 +871,6 @@ function showSlant() {
 
   if (selfflag===true){
     self();
-  }
-  if (bodyflag===true){
-    body();
   }
   if (placeflag===true){
     place();
@@ -977,9 +937,6 @@ function showSlantIt(){
   if (selfflag===true){
     self();
   }
-  if (bodyflag===true){
-    body();
-  }
   if (placeflag===true){
     place();
   }
@@ -1024,9 +981,6 @@ function showGrass() {
 
   if (selfflag===true){
     self();
-  }
-  if (bodyflag===true){
-    body();
   }
   if (placeflag===true){
     place();
@@ -1100,9 +1054,6 @@ function showGrassIt(){
   if (selfflag===true){
     self();
   }
-  if (bodyflag===true){
-    body();
-  }
   if (placeflag===true){
     place();
   }
@@ -1147,9 +1098,6 @@ function showFall() {
 
   if (selfflag===true){
     self();
-  }
-  if (bodyflag===true){
-    body();
   }
   if (placeflag===true){
     place();
@@ -1222,9 +1170,6 @@ function showFallIt(){
 
   if (selfflag===true){
     self();
-  }
-  if (bodyflag===true){
-    body();
   }
   if (placeflag===true){
     place();
@@ -1326,34 +1271,6 @@ function selfback(){
   var metadatatable=document.getElementById("metaSelf");
   metadatatable.innerHTML=`
     <button type="button" onclick="self()" id="metadata" class="self">Self-reference</button>
-  `;
-}
-
-function body(){
-  var x=document.getElementsByClassName("body");
-  for (i = 0; i < x.length; i++) {
-    x[i].style = "background-color: #ff77d2;";
-  }  
-
-  bodyflag=true;
-
-  var metadatatable=document.getElementById("metaBody");
-  metadatatable.innerHTML=`
-    <button type="button" onclick="bodyback()" id="metadata" class="body">Body parts</button>
-  `;
-}
-
-function bodyback(){
-  var x=document.getElementsByClassName("body");
-  for (i = 0; i < x.length; i++) {
-    x[i].style = "background-color: none;";
-  } 
-
-  bodyflag=false;
-
-  var metadatatable=document.getElementById("metaBody");
-  metadatatable.innerHTML=`
-    <button type="button" onclick="body()" id="metadata" class="body">Body parts</button>
   `;
 }
 
