@@ -170,13 +170,6 @@ nav ul li a {
   background-image: url(slide/deco.jpg);
 }
 
-#hero .carousel-item {
-  width: 100%;
-  height: 70vh;
-  border: 5px solid rgb(156, 127, 0);
-  opacity: 0.9;
-}
-
 #responsive{
   display: none;
 }
@@ -336,6 +329,10 @@ nav ul li button{
     width: 70%;
     float: right;
   }
+  .issuesintro .red-bold{
+    overflow: auto;
+    height: 750px;
+  }
 }
 @media screen and (max-width: 900px){
   #menuindex{
@@ -392,8 +389,18 @@ nav ul li button{
     margin-left: 0;
   }
   #responsive{
+    display: inline-block;
+    position: relative;
     margin-left: 5px;
     margin-top: 15px;
+  }
+  .dropdown-content{
+    position: absolute;
+  }
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
   }
 }
 @media screen and (max-width: 600px){
@@ -787,8 +794,7 @@ nav ul li button{
   font-family: "Riot";
   border: 5px solid rgb(156, 127, 0);
   padding: 30px;
-  height: 750px;
-  overflow: auto;
+  height:fit-content;
 }
 
 .issuesintro h2 {

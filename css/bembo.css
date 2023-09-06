@@ -201,7 +201,8 @@ a.active, a:hover{
 #hero {
   width: 100%;
   height: 70vh;
-  background-image: url(slide/bembo.jpg);
+  background-image: url(slide/bembo.jpeg);
+  background-repeat: no-repeat;
   margin-bottom: -110px;
   border-bottom:  2px solid black;
 }
